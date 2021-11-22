@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5363EC11274BBF8B00B3A9AA /* ItemDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5363EC10274BBF8B00B3A9AA /* ItemDetail.swift */; };
 		53C94EA3274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C94EA2274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift */; };
 		53C94EA5274A54E3004AEF97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C94EA4274A54E3004AEF97 /* ContentView.swift */; };
 		53C94EA7274A54E6004AEF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C94EA6274A54E6004AEF97 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5363EC10274BBF8B00B3A9AA /* ItemDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetail.swift; sourceTree = "<group>"; };
 		53C94E9F274A54E3004AEF97 /* SampleProjectSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProjectSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C94EA2274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleProjectSwiftUIApp.swift; sourceTree = "<group>"; };
 		53C94EA4274A54E3004AEF97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				53C94EA2274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift */,
 				53C94EA4274A54E3004AEF97 /* ContentView.swift */,
 				53C94EB9274AE80A004AEF97 /* ItemRow.swift */,
+				5363EC10274BBF8B00B3A9AA /* ItemDetail.swift */,
 				53C94EA6274A54E6004AEF97 /* Assets.xcassets */,
 				53C94EAB274A54E6004AEF97 /* Info.plist */,
 				53C94EB1274A557D004AEF97 /* Helper.swift */,
@@ -154,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5363EC11274BBF8B00B3A9AA /* ItemDetail.swift in Sources */,
 				53C94EA5274A54E3004AEF97 /* ContentView.swift in Sources */,
 				53C94EA3274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift in Sources */,
 				53C94EB6274A5587004AEF97 /* Order.swift in Sources */,
