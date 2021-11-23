@@ -18,6 +18,16 @@ struct CheckoutView: View {
     
     let tipAmounts = [10, 15, 20, 25, 0]
     
+    var totalPrice: String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .currency
+        
+        let total = Double(order.total)
+        let tip = total / 100 * Double(tipAmount)
+        
+        return formatter.string(from: NSNumber(value: total + tip)) ?? "$0"
+    }
+    
     var body: some View {
         Form {
             Section {
@@ -43,7 +53,7 @@ struct CheckoutView: View {
                 .pickerStyle(SegmentedPickerStyle())
             }
             
-            Section(header: Text("Total: $100")) {
+            Section(header: Text("Total: \(totalPrice)")) {
                 Button("Confirm order") {
                     //place the order
                 }
