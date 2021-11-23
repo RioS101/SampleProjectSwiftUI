@@ -11,6 +11,7 @@
 		5363EC13274BD5F300B3A9AA /* OrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5363EC12274BD5F300B3A9AA /* OrderView.swift */; };
 		5363EC15274BF9B400B3A9AA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5363EC14274BF9B400B3A9AA /* MainView.swift */; };
 		5386CBCA274CE4B400F528FD /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386CBC9274CE4B400F528FD /* CheckoutView.swift */; };
+		5386CBCC274D375D00F528FD /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5386CBCB274D375C00F528FD /* FavoritesView.swift */; };
 		53C94EA3274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C94EA2274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift */; };
 		53C94EA5274A54E3004AEF97 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C94EA4274A54E3004AEF97 /* ContentView.swift */; };
 		53C94EA7274A54E6004AEF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53C94EA6274A54E6004AEF97 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 		5363EC12274BD5F300B3A9AA /* OrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderView.swift; sourceTree = "<group>"; };
 		5363EC14274BF9B400B3A9AA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		5386CBC9274CE4B400F528FD /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		5386CBCB274D375C00F528FD /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		53C94E9F274A54E3004AEF97 /* SampleProjectSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleProjectSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C94EA2274A54E3004AEF97 /* SampleProjectSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleProjectSwiftUIApp.swift; sourceTree = "<group>"; };
 		53C94EA4274A54E3004AEF97 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				5363EC10274BBF8B00B3A9AA /* ItemDetail.swift */,
 				5363EC12274BD5F300B3A9AA /* OrderView.swift */,
 				5386CBC9274CE4B400F528FD /* CheckoutView.swift */,
+				5386CBCB274D375C00F528FD /* FavoritesView.swift */,
 				53C94EA6274A54E6004AEF97 /* Assets.xcassets */,
 				53C94EAB274A54E6004AEF97 /* Info.plist */,
 				53C94EB1274A557D004AEF97 /* Helper.swift */,
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5386CBCC274D375D00F528FD /* FavoritesView.swift in Sources */,
 				5363EC11274BBF8B00B3A9AA /* ItemDetail.swift in Sources */,
 				5363EC15274BF9B400B3A9AA /* MainView.swift in Sources */,
 				5386CBCA274CE4B400F528FD /* CheckoutView.swift in Sources */,

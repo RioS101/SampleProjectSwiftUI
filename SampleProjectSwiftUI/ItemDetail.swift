@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ItemDetail: View {
+    @Binding var favorites: [MenuItem]
     //to read value from environment
     @EnvironmentObject var order: Order
     let item: MenuItem
@@ -41,12 +42,24 @@ struct ItemDetail: View {
         }
         .navigationTitle(item.name)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbar(content: {
+            Button(action: {
+                //add to favorites
+                if let position = favorites.firstIndex(of: item) {
+                    favorites.remove(at: position)
+                } else {
+                    favorites.append(item)
+                }
+            }, label: {
+                Image(systemName: favorites.contains(item) ? "star.fill" : "star")
+            })
+        })
     }
 }
 
 struct ItemDetail_Previews: PreviewProvider {
     static var previews: some View {
-        ItemDetail(item: MenuItem.example)
+        ItemDetail(favorites: .constant([MenuItem]()), item: MenuItem.example)
             .environmentObject(Order())
     }
 }

@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct MainView: View {
+    @State private var favorites: [MenuItem] = []
+    
     var body: some View {
         TabView {
-            ContentView()
+            ContentView(favorites: $favorites)
                 .tabItem {
                     Label("Menu", systemImage: "list.dash")
                 }
             OrderView()
                 .tabItem {
                     Label("Order", systemImage: "square.and.pencil")
+                }
+            FavoritesView(favorites: $favorites)
+                .tabItem {
+                    Label("Favorites", systemImage: "star")
                 }
         }
     }

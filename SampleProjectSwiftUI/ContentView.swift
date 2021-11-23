@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var favorites: [MenuItem]
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
     
     var body: some View {
@@ -16,7 +17,7 @@ struct ContentView: View {
                 ForEach(menu) { section in
                     Section(header:                     Text(section.name)) {
                         ForEach(section.items) { item in
-                            NavigationLink(destination: ItemDetail(item: item)) {
+                            NavigationLink(destination: ItemDetail(favorites: $favorites, item: item)) {
                                 ItemRow(item: item)
                             }
                         }
@@ -31,6 +32,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(favorites: .constant([MenuItem]()))
     }
 }
