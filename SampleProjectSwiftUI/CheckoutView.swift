@@ -14,10 +14,13 @@ struct CheckoutView: View {
     @State private var loyaltyNumber = ""
     @State private var tipAmount = 15
     @State private var showingPaymentAlert = false
+    @State private var pickUpTime = "Now"
     
     let paymentTypes = ["Cash", "Credit Card", "iDine points"]
     
     let tipAmounts = [10, 15, 20, 25, 0]
+    
+    let pickUpTimes = ["Now", "Tonight", "Tomorrow Morning"]
     
     var totalPrice: String {
         let formatter = NumberFormatter()
@@ -49,6 +52,15 @@ struct CheckoutView: View {
                 Picker("Percentage:", selection: $tipAmount) {
                     ForEach(tipAmounts, id: \.self) {
                         Text("\($0)%")
+                    }
+                }
+                .pickerStyle(SegmentedPickerStyle())
+            }
+            
+            Section(header: Text("Choose pick up time")) {
+                Picker("Pick up", selection: $pickUpTime) {
+                    ForEach(pickUpTimes, id: \.self) {
+                        Text($0)
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
